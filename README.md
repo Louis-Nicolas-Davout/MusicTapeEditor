@@ -2,6 +2,8 @@
 
 八音盒纸带编辑器是与[八音盒纸带生成器](https://github.com/Louis-Nicolas-Davout/MusicBoxTapeGenerator)配套的项目，旨在简化xml文件的编写工作，如图所示。  
 
+// 如果无法正常显示图片，尝试直接下载pic0.png。  
+
 ![](pic0.png)
 
 在demo目录中有一个编写好的序列化文件：雪之梦_Bandari.tape.ser，用作示例。  
