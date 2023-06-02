@@ -33,6 +33,7 @@ class MusicToDOM {
 		Transformer transformer = this.transformerFactory.newTransformer();
 		transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 		transformer.setOutputProperty(OutputKeys.ENCODING, "utf-8");
+		transformer.setOutputProperty(OutputKeys.STANDALONE, "yes");
 		DOMSource source = new DOMSource();
 		source.setNode(document);
 		StreamResult result = new StreamResult();
@@ -58,6 +59,7 @@ class MusicToDOM {
 		}
 		document.appendChild(root);
 		document.normalizeDocument();
+		document.setXmlStandalone(true);
 		return document;
 	}
 
